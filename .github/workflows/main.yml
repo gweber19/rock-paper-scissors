@@ -30,11 +30,13 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3 - Have GitHub Actions build the Maven project
-        run: mvn -B package --file pom.xml
+        run:  mvn -B package --file pom.xml
       
       - name: Step 4 - List the current directory
-        run: ls -a
+        run:  ls -a
         
       - name: Step 5 - What is the target folder
-        run:
-          cd target | ls -a
+        run:  cd target
+      
+      - name: Step 6 - List target folder contents
+        run:  ls -a
