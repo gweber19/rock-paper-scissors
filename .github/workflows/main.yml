@@ -37,5 +37,4 @@ jobs:
         
       - name: Step 5 - What is the target folder
         run:
-          cd target
-          ls -a
+          cd target | ls -a
